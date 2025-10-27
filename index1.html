@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #0078D7;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
+
+      .project {
+        padding: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        font-size: 1rem;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gokul Raj</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Gokul, a passionate web developer with a love for clean design and efficient code. I specialize in building responsive websites and web applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A sleek personal portfolio built with HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Task Manager App</h3>
+      <p>A simple task manager built with React and Firebase.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: g7661231@gmail.com</p>
+    <button class="btn" onclick="showMessage()">Say Hello</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gokul Raj</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Thanks for reaching out! I'll get back to you soon.");
+    }
+  </script>
+
+</body>
+</html>
